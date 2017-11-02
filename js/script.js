@@ -62,7 +62,6 @@ function animatedGraph() {
         var startValue = 1;
         setInterval(function() {
             if (startValue < finalValue){
-                console.log(startValue);
                 startValue++;
                 drawCircle('#f6d656', options.lineWidth, startValue / 100)}}, 50);} else {
         drawCircle('#f1f1ee', options.lineWidth, 100 / 100);
