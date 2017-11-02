@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Progress bar</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="main-page" >
+        Progress
+        <div class="main-page-wrapper">
+            <div class="main-page-wrapper__graph">
+                <div class="graph-chart" id="graph" data-percent="50">
+                </div>
+            </div>
+            <div class="main-page-wrapper__switch">
+                <div>
+                    <input class="switch__value" id="value-box" type="number" onchange="changeGraph(this);" value="50"><label for="value-box"> Value</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="ios-switch ios-switch-animation" id="checkbox-1" onclick="animatedGraph();">
+                    <label for="checkbox-1">Animate</label>
+                </div>
+                <div>
+                    <input type="checkbox" class="ios-switch ios-switch-hide" id="checkbox-2" onclick="hideGraph(this)">
+                    <label for="checkbox-2">Hide</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

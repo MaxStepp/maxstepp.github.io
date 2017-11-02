@@ -1,0 +1,117 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+canvas {
+    display: block;
+    position:relative;
+
+}
+
+
+.main-page {
+    padding: 15px;
+    height: 568px;
+    width: 320px;
+    box-sizing: border-box;
+}
+.main-page-wrapper{
+    margin: 50px;
+}
+.main-page-wrapper__graph{
+    box-sizing: border-box;
+    height: 190px;
+    padding: 30px 10px 50px 10px;
+}
+.graph-chart{
+    position:relative;
+    padding: 10px;
+    margin:0 auto;
+    width:150px; height:150px;
+}
+.main-page-wrapper__switch{
+    box-sizing: border-box;
+    height: 190px;
+    padding: 50px 40px 40px 40px;
+}
+.switch__value{
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 42px;
+    height: 26px;
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+.ios-switch  {
+    position: absolute;
+    margin: 8px 0 0 16px;
+}
+.ios-switch + label {
+    position: relative;
+    padding: 5px 0 0 50px;
+    line-height: 2.0em;
+}
+.ios-switch + label:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 40px; /* x*5 */
+    height: 24px; /* x*3 */
+    border-radius: 16px; /* x*2 */
+    background: #4a4a4a;
+    border: 1px solid black;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.ios-switch + label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    width: 24px; /* x*3 */
+    height: 24px; /* x*3 */
+    border-radius: 16px; /* x*2 */
+    background: #d7d8d8;
+    border: 1px solid #d9d9d9;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.ios-switch + label:hover:after {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+.ios-switch:checked + label:after {
+    margin-left: 16px;
+    background-color: white;
+}
+.ios-switch:checked + label:before {
+    background: #55D069;
+}
+@media screen and (orientation:landscape)
+{
+    .main-page {
+        padding: 15px;
+        height: 320px;
+        width: 568px;
+        box-sizing: border-box;
+    }
+    .main-page-wrapper__graph{
+        float: left;
+        padding: 5px;
+    }
+    .main-page-wrapper__switch{
+        float: right;
+        padding: 45px 60px 0px 0px;
+    }
+}
