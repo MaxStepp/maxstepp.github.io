@@ -54,11 +54,11 @@ function changeGraph(input){
         drawCircle('#f1f1ee', options.lineWidth, 100 / 100);
     }
 }
-
+//Функция анимация графа от 1% до значения указанного в поле value
 function animatedGraph() {
     if(document.querySelector(".ios-switch-animation").checked){
         drawCircle('#f1f1ee', options.lineWidth, 100 / 100);
-        var finalValue = document.querySelector('.switch__value').value;
+        var finalValue = document.querySelector('.switch__value').value;//Конечное значение
         var startValue = 1;
         setInterval(function() {
             if (startValue < finalValue){
